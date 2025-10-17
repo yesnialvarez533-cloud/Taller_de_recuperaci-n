@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+          font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: linear-gradient(135deg, #004b8d 30%, #0074cc 100%);
+          color: #333;
+      }
+
+      header {
+          background-color: rgba(0,0,0,0.3);
+          color: white;
+          padding: 1.5em;
+          text-align: center;
+          backdrop-filter: blur(6px);
+      }
+
+      .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .header-container img {
+          width: 120px;
+          border-radius: 50%;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          gap: 2em;
+          margin-top: 1em;
+      }
+
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 0.5em 1em;
+          border-radius: 5px;
+          transition: 0.3s ease;
+      }
+
+      nav ul li a:hover {
+          background-color: #ffcc00;
+          color: #004b8d;
+      }
+
+      h2.title {
+          text-align: center;
+          color: white;
+          margin: 2em 0 1em;
+      }
+
+      .vehicles {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2em;
+          max-width: 1200px;
+          margin: 2em auto;
+          padding: 1em;
+      }
+
+      .card {
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+      }
+
+      .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+
+      .card-content {
+          padding: 1.2em;
+      }
+
+      .card h3 {
+          color: #004b8d;
+          margin-bottom: 0.5em;
+      }
+
+      .card ul {
+          list-style: none;
+          font-size: 0.95em;
+          margin-bottom: 1em;
+      }
+
+      .card ul li {
+          padding: 0.2em 0;
+      }
+
+      .price {
+          background-color: #ffcc00;
+          color: #004b8d;
+          font-weight: bold;
+          display: inline-block;
+          padding: 0.4em 1em;
+          border-radius: 20px;
+          margin-bottom: 1em;
+      }
+
+      .btn {
+          display: inline-block;
+          background-color: #004b8d;
+          color: white;
+          padding: 0.7em 1.2em;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+      }
+
+      .btn:hover {
+          background-color: #ffcc00;
+          color: #004b8d;
+      }
+
+      footer {
+          text-align: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          background-color: rgba(0,0,0,0.3);
+          color: white;
+          padding: 1em;
+          margin-top: 3em;
+      }
+
+</style>
+
+    
+</head>
+    <header title="AutoRent S.A.S.">
+      <h1>Bienvenido a AutoRent S.A.S.</h1>
+      <!--Barra de navegacion-->
+      <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="vehiculos.html">Vehiculos</a></li>
+            <li><a href="Alquiler.html">Alquiler</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+</head>
+<body>
+
+    <h2>Sedán – Toyota Corolla 2023</h2>
+    <li>Tipo: Sedán</li>
+    <li>Marca: Toyota</li>
+    <li>Modelo: Corolla</li>
+    <li>Transmisión: Automática</li>
+    <li>Tarifa diaria: $50 USD</li>
+    <image src="https://www.buyatoyota.com/sharpr/bat/assets/img/vehicle-info/Corolla/2023/hero_image_corolla.png" alt="Toyota" width="200">
+
+    <h2>SUV – Kia Sportage 2024</h2>
+    <li>Tipo: SUV</li>
+    <li>Marca: Kia</li>
+    <li>Modelo: Sportage</li>
+    <li>Transmisión: Automática</li>
+    <li>Tarifa diaria: $75 USD</li>
+    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJ7v12TO6HklZi_lQ9JgIxD6_VarOmzvY0Q&s" alt="Kia" width="200">
+
+    <h2>Compacto – Chevrolet Spark GT</h2>
+    <li>Tipo: Compacto</li>
+    <li>Marca: Chevrolet</li>
+    <li>Modelo: Spark GT</li>
+    <li>Transmisión: Mecánica</li>
+    <li>Tarifa diaria: $40 USD</li>
+    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XNgfBC7XUpwtB5bv83EBuL4IeyNCSgfR4g&s" alt="Chevrolet" width="200"></image>
+
+
+    <h2>Van – Renault Kangoo</h2>
+    <li>Tipo: Van</li>
+    <li>Marca: Renault</li>
+    <li>Modelo: Kangoo</li>
+    <li>Transmisión: Mecánica</li>
+    <li>Tarifa diaria: $90 USD</li>
+    <image src="https://cdn.group.renault.com/ren/co/vehicles/kangoo/home/renault-kangoo-exterior.jpg.ximg.xsmall.jpg/575e68ba40.jpg"  alt="Renault" width="200"> 
+
+
+    <footer>
+        <h2>Movilidad segura, servicio garantizado</h2>
+    </footer>
+
+</body>
+</html>
